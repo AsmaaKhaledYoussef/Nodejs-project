@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="" href="formtest.css"/>
+    <title>Document</title>
+</head>
+<!-- <main id="main">
+    <section>
+        <h1>
+            Create new article
+        </h1>
+        <form class="forrm">
+            <label for="title"> Article Title: </label>
+            <input id="title" type="text" required>
+
+            <label for="summary"> Article Summary: </label>
+            <input id="summary" type="text">
+
+            <label for="body"> Article body: </label>
+            <textarea id="body" ></textarea>
+            <input id="pass" type="te">
+
+            <button>create</button>
+        </form>
+    </section>
+</main> -->
+<body>
+<form  action="http://localhost:8080/direct/art"  method="POST" enctype="multipart/form-data"   >
+    <!-- enctype="multipart/form-data" -->
+    <fieldset>
+        <div class="form-control">
+            
+      <legend>Add New Post</legend>
+
+      <!-- <div class="form-control">
+        <label for="photo">Photo</label>
+        <input type="file" placeholder="Enter your photo" required name="photo"/>
+      </div> -->
+      
+      <div class="form-control">
+        <label for="name">Title</label>
+        <input type="name" id="name" placeholder="Enter your name" required name="title" />
+      </div>
+
+      <div class="form-control">
+        <label for="summary">Article Summary</label>
+        <input type="text" id="summary" placeholder="Enter your summary" required name="summary" />
+      </div>
+
+      
+         <div>
+        <label for="message">Artical content</label>
+        <textarea id="message" cols="30" rows="10" placeholder="Enter your message" required name="body"></textarea>
+      </div>
+
+      <div class="form-control">
+        <label for="author">Author </label>
+        <input type="text" id="author" placeholder="Enter the author" required name="author" />
+      </div>
+      
+      <button><a href="/" class="btn btn-secondary" > Cansel </a></button>
+      <button type="submit" class="btn btn-primary" > Save</button>
+    </fieldset>
+</form>
+   
+</body>
+</html>

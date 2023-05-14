@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Registration Form</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/css/form-register.css">
+<style>
+    #name-Error , #email-Error ,#pass-Error, #rpass-Error {
+    position: absolute;
+    right: 40px;
+    color: red;
+    }
+    header{
+        text-align: center;
+        font-family: sans-serif;
+        color: #000000c4;
+    text-shadow: -20px 16px 6px white;
+    font-size: 20px;
+    }
+    body{
+        background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card{
+        box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2) !important;
+    /* height: 300px; */
+    border-radius: 5px;
+    backdrop-filter: blur(14px) !important;
+    background-color: white !important;
+    }
+</style>
+</head>
+    <div class="main-content">
+<header >
+    <h1>
+      Wellcome to our Bloging website
+    </h1>
+</header>
+        <!-- You only need this form and the form-register.css -->
+
+        <form class="form-register" method="POST" action="http://localhost:8080/direct/reg">
+
+            <div class="form-register-with-email">
+
+                <div class="form-white-background " >
+
+                    <div class="form-title-row">
+                        <h1>Create an account</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" id="name" onkeyup="nameValid()">
+                            <span id="name-Error"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" id="email" onkeyup="emailValid()">
+                            <span id="email-Error"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" name="password" id="pass" onkeyup="passValid()">
+                            <span id="pass-Error"></span>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <!-- <label>
+                            <span>Confirm Password</span>
+                            <input type="password" name="rpass" id="rpass" onkeyup="rpassValid()">
+                            <span id="rpass-Error"></span>
+                        </label> -->
+                    </div>
+                    <!-- <div class="radios">
+                        <label for="">Register as:</label>
+                        <div class="form-check form-check-inline user">
+                            <input class="form-check-input" type="radio" name="role" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">User</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="role" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Auther</label>
+                          </div>
+                    </div> -->
+                  
+                   
+                    <div class="form-row auth">
+                        <!-- <label class="form-checkbox">
+                            <input type="checkbox" name="checkbox" checked>
+                            <span>I agree to the <a href="#">terms and conditions</a></span>
+                        </label> -->
+                    </div>
+
+                    <div class="form-row">
+                        <!-- onclick="validateForm(event)" -->
+                        <button id="" type="submit" >Register</button>
+                    </div>
+
+                </div>
+
+                <a href="Login.html" class="form-log-in-with-existing">Already have an account? Login here &rarr;</a>
+
+            </div>
+
+            <div class="form-sign-in-with-social">
+
+                <div class="form-row form-title-row">
+                    <span class="form-title">Sign in with</span>
+                </div>
+
+                <a href="#" class="form-google-button">Google</a>
+                <a href="#" class="form-facebook-button">Facebook</a>
+                <a href="#" class="form-twitter-button">Twitter</a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+<script src="assets/js/form.js"></script>
+</html>

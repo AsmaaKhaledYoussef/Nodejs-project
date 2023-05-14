@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="assets/css/login.css">
+<style>
+  body{
+    background-image: url('https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="login-form-wrap">
+  <h2>Login</h2>
+  <form id="login-form" method="POST" action="http://localhost:8080/direct/login">
+    <p>
+    <input type="text" id="email" name="name" placeholder="enter user name" >
+    <span id="emailError"></span>
+    </p>
+    <p>
+    <input type="password" id="pass" name="password" placeholder="Password" >
+    <span id="passError"></span>
+    </p>
+    <p>
+    <button id="login" onclick="check(event)" >Login</button>
+      
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p>Not a member? <a href="form-register.html">Create Account</a><p>
+  </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
+  <!-- <script src="assets/js/login.js"></script> -->
+</body>
+</html>
